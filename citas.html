@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Citas | Benji & Terry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo">
+        <div class="logo-text">
+            <h2>Benji & Terry</h2>
+            <span>Clínica Veterinaria</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="estetica.html">Estética</a>
+        <a href="pension.html">Pensión</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="citas.html">Citas</a>
+    </nav>
+</header>
+
+<main class="contenido-pagina">
+
+    <h1 class="titulo-pagina">Citas Médicas</h1>
+
+    <p class="descripcion">
+        Agenda la consulta de tu mascota de manera rápida y sencilla.
+    </p>
+
+    <!-- INFORMACION -->
+    <section class="servicios">
+
+        <div class="servicio">
+            <img src="img/consulta.jpg" alt="Consulta">
+            <h3>Consulta general</h3>
+            <p>Revisión completa de la salud de tu mascota.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/vacuna.jpg" alt="Vacunación">
+            <h3>Vacunación</h3>
+            <p>Protección contra enfermedades.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/revision.jpg" alt="Revisión">
+            <h3>Chequeo</h3>
+            <p>Control y seguimiento médico.</p>
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario">
+        <h2>Registrar cita</h2>
+
+        <form id="formCitas">
+
+            <input type="text" id="dueno" placeholder="Nombre del dueño" required>
+
+            <input type="text" id="mascota" placeholder="Nombre de la mascota" required>
+
+            <select id="tipoConsulta" required>
+                <option value="">Tipo de consulta</option>
+                <option value="300">Consulta general</option>
+                <option value="200">Vacunación</option>
+                <option value="250">Chequeo</option>
+            </select>
+
+            <input type="number" id="pago" placeholder="Pago recibido ($)" required>
+
+            <button type="submit">Registrar cita</button>
+
+            <p id="resultadoCitas"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <img src="img/logo.png" class="logo-footer">
+    <p>© 2026 Benji & Terry Clínica Veterinaria</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

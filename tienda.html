@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda | Benji & Terry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo">
+        <div class="logo-text">
+            <h2>Benji & Terry</h2>
+            <span>Clínica Veterinaria</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="estetica.html">Estética</a>
+        <a href="pension.html">Pensión</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="citas.html">Citas</a>
+    </nav>
+</header>
+
+<main class="contenido-pagina">
+
+    <h1 class="titulo-pagina">Tienda de Mascotas</h1>
+
+    <p class="descripcion">
+        Encuentra productos de calidad para el cuidado y bienestar de tu mascota.
+    </p>
+
+    <!-- PRODUCTOS -->
+    <section class="servicios">
+
+        <div class="servicio">
+            <img src="img/alimento.jpg" alt="Alimento">
+            <h3>Alimento premium</h3>
+            <p>Nutrición completa para tu mascota.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/juguete.jpg" alt="Juguete">
+            <h3>Juguete</h3>
+            <p>Entretenimiento y diversión.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/collar.jpg" alt="Collar">
+            <h3>Collar</h3>
+            <p>Comodidad y estilo.</p>
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario">
+        <h2>Comprar producto</h2>
+
+        <form id="formTienda">
+
+            <select id="producto">
+                <option value="">Selecciona producto</option>
+                <option value="300">Alimento</option>
+                <option value="150">Juguete</option>
+                <option value="100">Collar</option>
+            </select>
+
+            <input type="number" id="cantidad" placeholder="Cantidad" required>
+
+            <button type="submit">Calcular total</button>
+
+            <p id="resultadoTienda"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <img src="img/logo.png" class="logo-footer">
+    <p>© 2026 Benji & Terry Clínica Veterinaria</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
