@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pensión | Benji & Terry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo">
+        <div class="logo-text">
+            <h2>Benji & Terry</h2>
+            <span>Clínica Veterinaria</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="estetica.html">Estética</a>
+        <a href="pension.html">Pensión</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="citas.html">Citas</a>
+    </nav>
+</header>
+
+<main class="contenido-pagina">
+
+    <h1 class="titulo-pagina">Pensión Canina</h1>
+
+    <p class="descripcion">
+        En nuestra pensión canina brindamos un ambiente seguro, cómodo y lleno de atención
+        para que tu mascota se sienta como en casa mientras tú no estás.
+    </p>
+
+    <!-- SERVICIOS CON IMÁGENES -->
+    <section class="servicios">
+
+        <div class="servicio">
+            <img src="img/pension1.jpg" alt="Estancia">
+            <h3>Estancia cómoda</h3>
+            <p>Espacios amplios, limpios y seguros para su descanso.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/pension2.jpg" alt="Cuidado">
+            <h3>Supervisión</h3>
+            <p>Atención constante por personal capacitado.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/pension3.jpg" alt="Juego">
+            <h3>Área de juego</h3>
+            <p>Actividades recreativas para mantenerlos felices.</p>
+        </div>
+
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="formulario">
+        <h2>Calcular estancia</h2>
+
+        <form id="formPension">
+
+            <input type="text" id="perro" placeholder="Nombre del perro" required>
+
+            <input type="number" id="dias" placeholder="Días de estancia" required>
+
+            <input type="number" id="costo" placeholder="Costo por día ($)" required>
+
+            <button type="submit">Calcular total</button>
+
+            <p id="resultadoPension"></p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <img src="img/logo.png" class="logo-footer">
+    <p>© 2026 Benji & Terry Clínica Veterinaria</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

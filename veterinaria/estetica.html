@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estética | Benji & Terry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Logo">
+        <div class="logo-text">
+            <h2>Benji & Terry</h2>
+            <span>Clínica Veterinaria</span>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="estetica.html">Estética</a>
+        <a href="pension.html">Pensión</a>
+        <a href="tienda.html">Tienda</a>
+        <a href="citas.html">Citas</a>
+    </nav>
+</header>
+
+<main class="contenido-pagina">
+
+    <h1 class="titulo-pagina">Estética Canina</h1>
+
+    <p class="descripcion">
+        En Benji & Terry ofrecemos servicios de estética para mantener a tu mascota limpia, sana y feliz.
+    </p>
+
+    <!-- SERVICIOS -->
+    <section class="servicios">
+
+        <div class="servicio">
+            <img src="img/perrobaño.jpg" alt="Baño">
+            <h3>Baño</h3>
+            <p>Limpieza profunda con productos especializados.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/perrocorte.jpg" alt="Corte">
+            <h3>Corte de pelo</h3>
+            <p>Estilo personalizado según la raza.</p>
+        </div>
+
+        <div class="servicio">
+            <img src="img/perrouñas.jpg" alt="Uñas">
+            <h3>Corte de uñas</h3>
+            <p>Higiene y cuidado de sus patitas.</p>
+        </div>
+
+    </section>
+
+<section class="formulario">
+    <h2>Cotizar servicio</h2>
+
+    <form id="formEstetica">
+
+        <input type="text" id="dueno" placeholder="Nombre del dueño" required>
+
+        <input type="text" id="perro" placeholder="Nombre del perro" required>
+
+        <select id="tamano" required>
+            <option value="">Tamaño del perro</option>
+            <option value="1">Pequeño</option>
+            <option value="1.2">Mediano</option>
+            <option value="1.5">Grande</option>
+        </select>
+
+        <select id="servicio" required>
+            <option value="">Servicio</option>
+            <option value="200">Baño</option>
+            <option value="350">Corte de pelo</option>
+        </select>
+
+        <button type="submit">Calcular costo</button>
+
+        <p id="resultadoEstetica"></p>
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <img src="img/logo.png" class="logo-footer">
+    <p>© 2026 Benji & Terry Clínica Veterinaria</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
